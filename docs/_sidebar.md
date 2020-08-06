@@ -1,6 +1,4 @@
+- **后端**
+  - [Java](docs/note.md)
 
-* [备战面试](./docs/note.md)
-  
-* Java
 
-  * [Java基础](./docs/note1.md)
