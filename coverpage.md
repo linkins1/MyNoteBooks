@@ -2,4 +2,4 @@
 
 # Lins1-NoteBooks <small>2020</small>
 
-[下滑----](#Lins1-NoteBooks)
+[下滑](#Lins1-NoteBooks)
