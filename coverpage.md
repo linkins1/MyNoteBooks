@@ -3,4 +3,3 @@
 </p>
 <h1 align="center">lins1-notebooks</h1>
 
-[开始阅读](#lins1-notebooks)
