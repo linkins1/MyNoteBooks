@@ -2,4 +2,4 @@
 
 # Lins1's notebooks
 
-[下滑](#lins1-notebooks)
+[下滑](#LinsNoteBooks)
