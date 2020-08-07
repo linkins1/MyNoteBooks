@@ -1,6 +1,6 @@
 # lins1-notebooks
 
-> An awesome project.
+> 秃头之旅.
 
+## 从0到1 方得真谛
 
-## 记记笔记
