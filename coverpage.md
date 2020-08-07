@@ -1,5 +1,5 @@
 ![logo](SPINNING%20DOG.jpg) 
 
-# Lins1-NoteBooks <small>2020</small>
+# Lins1's notebooks <small>2020</small>
 
-[下滑](#Lins1-NoteBooks)
+[下滑](#lins1-notebooks)
