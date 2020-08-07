@@ -8,7 +8,7 @@
   <meta name="description" content="Description">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
 
 <body>
@@ -25,7 +25,8 @@
       coverpage: 'coverpage.md',
       loadSidebar: 'sidebar.md',
       auto2top: true,//切换页面后是否自动跳转到页面顶部
-      themeColor: '#87c9ff'
+      themeColor: '#87c9ff',
+      loadNavbar: true,
       //全文搜索
       search: {
         //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
@@ -51,6 +52,8 @@
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
   <!-- 字数统计 -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 侧边栏 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 
 </html>
