@@ -4,4 +4,3 @@
 
 # Lins1's notebooks
 
-[滑不动](./)
