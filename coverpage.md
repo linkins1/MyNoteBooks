@@ -2,7 +2,7 @@
 <img src="./SPINNING%20DOG.jpg" width="200" height="200"/>
 </p>
 
-<h2>Lins1's notebooks</h2>
+<h1>Lins1's notebooks</h1>
 
-[开始阅读](#lins1-notebooks)
+[虾滑](#lins1-notebooks)
 
