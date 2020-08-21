@@ -45,7 +45,7 @@ Hibernate数据库移植性远大于MyBatis。Hibernate通过它强大的映射�
 
 总而言之，Mybatis支持我们手写sql，并对sql进行优化，框架所完成的部分，其实是除了手写sql和执行sql之外的所有部分(如获取连接、准备PreparedStatement对象等)，其最大的贡献是完成了关系型数据库中的**记录到POJO的映射**
 
-> 由于Mybatis没有想Hibernate强大的日志功能，通常引入log4j来解决这个问题
+> 由于Mybatis没有像Hibernate强大的日志功能，通常引入log4j来解决这个问题
 
 ### 1.2入门案例
 
