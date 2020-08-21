@@ -63,7 +63,7 @@ Hibernate数据库移植性远大于MyBatis。Hibernate通过它强大的映射�
 
 表格如下
 
-![mybatis1_usertableinfo](C:\Users\123\Desktop\笔记图片\mybatis\mybatis1_usertableinfo.png)
+![mybatis1_usertableinfo](backend/mybatis/imgs/mybatis1_usertableinfo.png)
 
 #### 1.2.3 编写POJO
 
