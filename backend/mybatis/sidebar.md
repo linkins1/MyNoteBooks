@@ -1,2 +1,2 @@
-# **Mybatis笔记**
-## [Mybatis的入门](mybatis_1.md)
+- **Mybatis笔记**
+ - [Mybatis的入门](./mybatis_1.md)
