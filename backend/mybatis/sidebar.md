@@ -1,2 +1,2 @@
 - **Mybatis笔记**
-  - [Mybatis入门](./mybatis_1.md)
+  - [Mybatis入门](backend/mybatis/mybatis_1.md)
