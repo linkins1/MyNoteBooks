@@ -410,7 +410,7 @@ void deleteUserWithXML(int id);
 
 ##### （1）parameterType
 
-此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](#别名规则)，所以可以将此转型为Integer
+此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](### 2.2.4别名注册)，所以可以将此转型为Integer
 
 ##### （2）占位符
 
@@ -1142,7 +1142,11 @@ public TypeAliasRegistry() {
 resultMap标签可以建立查询的列名和实体类的属性名称不一致时建立对应关系。从而实现封装。 在select标签中使用resultMap属性指定引用即可。同时resultMap可以实现将查询结果映射为复杂类型的pojo，比如在查询结果映射对象中包括pojo和list实现一对一查询和一对多查询。
 
 ```xml
-<resultMap type="com.itheima.domain.User" id="userMap"> <id column="id" property="userId"/> <result column="username" property="userName"/> <result column="sex" property="userSex"/> <result column="address" property="userAddress"/> <result column="birthday" property="userBirthday"/> 
+<resultMap type="com.itheima.domain.User" id="userMap"> 
+    <id column="id" property="userId"/> 
+    <result column="username" property="userName"/> 
+    <result column="sex" property="userSex"/> <result column="address" property="userAddress"/> 
+    <result column="birthday" property="userBirthday"/> 
 </resultMap>
 ```
 
