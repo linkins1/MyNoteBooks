@@ -410,7 +410,7 @@ void deleteUserWithXML(int id);
 
 ##### （1）parameterType
 
-此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](###2.2.4别名注册)，所以可以将此转型为Integer
+此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](###别名注册)，所以可以将此转型为Integer
 
 ##### （2）占位符
 
