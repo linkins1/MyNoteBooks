@@ -1149,7 +1149,11 @@ resultMap标签可以建立查询的列名和实体类的属性名称不一致�
     <result column="birthday" property="userBirthday"/> 
 </resultMap>
 ```
-
+其中的属性的含义如下
+- id标签：用于指定主键字段
+- result标签：用于指定非主键字段
+- column属性：用于指定数据库列名
+- property属性：用于指定实体类属性名称
 ```xml
 <!-- 配置查询所有操作 --> 
 <select id="findAll" resultMap="userMap">
