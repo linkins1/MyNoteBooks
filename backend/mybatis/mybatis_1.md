@@ -410,7 +410,7 @@ void deleteUserWithXML(int id);
 
 ##### （1）parameterType
 
-此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](###2.2.4别名注册)，所以可以将此转型为Integer
+此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](###_2.2.4别名注册)，所以可以将此转型为Integer
 
 ##### （2）占位符
 
@@ -1214,7 +1214,7 @@ jdbc.password=1234
 
 #### 3.1.1获得数据库连接对象
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200830204254406.png" alt="image-20200830204254406" style="zoom:80%;" />
+<img src="/image-20200830204254406.png" alt="image-20200830204254406" style="zoom:80%;" />
 
 跟踪preparedStatement对象的构建的trace为上图，可以看出当使用POOLED模式时，使用的是构建preparedStatement对象使用的Connection对象使用的是PooledDataSource的getConnection方法，在深入这个方法体之前，首先来熟悉下面几个类
 
