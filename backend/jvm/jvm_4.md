@@ -14,7 +14,7 @@ jps -<option>
 
 option可选选项如下
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911161056147.png" alt="image-20200911161056147" style="zoom:50%;" />
+<img src="img/image-20200911161056147.png" alt="image-20200911161056147" style="zoom:50%;" />
 
 #### 4.1.2jstat（JVM Statistics Monitoring Tool）
 
@@ -28,7 +28,7 @@ jstat -<option> [-t] [-h<lines>] <vmid> [<interval> [<count>]]
 
 `option`可选参数如下
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911161342776.png" alt="image-20200911161342776" style="zoom:80%;" />
+<img src="img/image-20200911161342776.png" alt="image-20200911161342776" style="zoom:80%;" />
 
 `-t`代表是否带有时间戳输出
 
@@ -85,7 +85,7 @@ jmap [ option ] vmid
 
 option可选参数如下
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911162458032.png" alt="image-20200911162458032" style="zoom:80%;" />
+<img src="img/image-20200911162458032.png" alt="image-20200911162458032" style="zoom:80%;" />
 
 #### 4.1.5jhat（JVM Heap Analysis Tool）
 
@@ -105,7 +105,7 @@ jstack [ option ] vmid
 
 option参数如下
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911162715114.png" alt="image-20200911162715114" style="zoom:80%;" />
+<img src="img/image-20200911162715114.png" alt="image-20200911162715114" style="zoom:80%;" />
 
 ### 4.2 可视化故障处理工具
 
@@ -126,35 +126,35 @@ option参数如下
 
 启动JConsole时，会列出所有的运行中的进程，相当于执行了jps
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911164401045.png" alt="image-20200911164401045" style="zoom: 80%;" />
+<img src="img/image-20200911164401045.png" alt="image-20200911164401045" style="zoom: 80%;" />
 
 ##### 2）概览 
 
-![image-20200911164556656](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911164556656.png)
+![image-20200911164556656](img/image-20200911164556656.png)
 
 ##### 3）内存(相当于jstat)
 
-![image-20200911164616430](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911164616430.png)
+![image-20200911164616430](img/image-20200911164616430.png)
 
 旁边的执行GC是执行一次Full GC
 
 ##### 4）线程(相当于jstack)
 
-![image-20200911164634537](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911164634537.png)
+![image-20200911164634537](img/image-20200911164634537.png)
 
 下面的检查死锁可以显示出遇到死锁的线程
 
 ##### 5）类加载状况
 
-![image-20200911164711022](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911164711022.png)
+![image-20200911164711022](img/image-20200911164711022.png)
 
 ##### 6）VM概览
 
-![image-20200911164723643](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911164723643.png)
+![image-20200911164723643](img/image-20200911164723643.png)
 
 ##### 7）MBeans
 
-![image-20200911164757647](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200911164757647.png)
+![image-20200911164757647](img/image-20200911164757647.png)
 
 #### 4.2.2Visual VM:多合一故障处理工具
 
