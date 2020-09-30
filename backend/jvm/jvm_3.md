@@ -65,7 +65,7 @@ public class ReferenceCountingGC {
 
 下图中object5、6、7互相可达，但是和GC Roots不可达，因而被判定为需要被回收
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200909170222361.png" alt="image-20200909170222361" style="zoom:50%;" />
+<img src="img/image-20200909170222361.png" alt="image-20200909170222361" style="zoom:50%;" />
 
 ###### （2）GC Root对象可以为如下种类
 
@@ -162,7 +162,7 @@ public class ReferenceCountingGC {
 
 ##### 2）图示
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910133158631.png" alt="image-20200910133158631" style="zoom: 50%;" />
+<img src="img/image-20200910133158631.png" alt="image-20200910133158631" style="zoom: 50%;" />
 
 ##### 3）特性
 
@@ -188,7 +188,7 @@ public class ReferenceCountingGC {
 
 ##### 2）图示
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910133745987.png" alt="image-20200910133745987" style="zoom:50%;" />
+<img src="img/image-20200910133745987.png" alt="image-20200910133745987" style="zoom:50%;" />
 
 ##### 3）特性
 
@@ -212,7 +212,7 @@ public class ReferenceCountingGC {
 
 ##### 2）图示
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910155050139.png" alt="image-20200910155050139" style="zoom:50%;" />
+<img src="img/image-20200910155050139.png" alt="image-20200910155050139" style="zoom:50%;" />
 
 ##### 3）特性
 
@@ -264,7 +264,7 @@ public class ReferenceCountingGC {
 
 收集器是一个单线程工作的收集器，采用标记复制算法。下图是Serial/SerialOld搭配的示意图，其中SerialOld采用标记整理
 
-![image-20200910161234841](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910161234841.png)
+![image-20200910161234841](img/image-20200910161234841.png)
 
 ###### （2）特性
 
@@ -287,7 +287,7 @@ HotSpot虚拟机运行在客户端模式下的默认新生代收集器
 
 实质上是**Serial收集器的多线程并行版本**，除了同时使用多条线程进行垃圾收集之外完全一致。下图是ParNew/SerialOld搭配的示意图
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910162040370.png" alt="image-20200910162040370" style="zoom:80%;" />
+<img src="img/image-20200910162040370.png" alt="image-20200910162040370" style="zoom:80%;" />
 
 此处所讲的并行是指多个GC线程并行执行，仍然会暂停用户线程
 
@@ -309,7 +309,7 @@ HotSpot虚拟机运行在客户端模式下的默认新生代收集器
 
 Parallel Scavenge收集器的目标则是达到一个可控制的吞吐量（Throughput），其中
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910163801503.png" alt="image-20200910163801503" style="zoom: 33%;" />
+<img src="img/image-20200910163801503.png" alt="image-20200910163801503" style="zoom: 33%;" />
 
 - 吞吐量举例
 
@@ -339,7 +339,7 @@ Serial Old是**Serial收集器的老年代版本**，它同样是一个**单线�
 
 Parallel Old是**Parallel Scavenge收集器的老年代版本**，支持多线程**并发收集**，基于**标记-整理**算法实现，下图为Parallel Scavenge/Parallel Old搭配使用
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910165058126.png" alt="image-20200910165058126" style="zoom: 67%;" />
+<img src="img/image-20200910165058126.png" alt="image-20200910165058126" style="zoom: 67%;" />
 
 在**注重吞吐量或者处理器资源较为稀缺的场合**，都可以优先考虑上面这个组合
 
@@ -411,7 +411,7 @@ G1的**标记过程如下四步**
 
 最终，可以通过下图看出G1的并发和独占的流程
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910172354829.png" alt="image-20200910172354829" style="zoom:80%;" />
+<img src="img/image-20200910172354829.png" alt="image-20200910172354829" style="zoom:80%;" />
 
 ###### （2）与CMS对比
 
