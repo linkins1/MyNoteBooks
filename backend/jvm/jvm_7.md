@@ -6,7 +6,7 @@
 
 一个类型从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期将会经历**加载**（Loading）、验证（Verification）、**准备**（Preparation）、**解析**（Resolution）、**初始化**（Initialization）、**使用**（Using）和**卸载**（Unloading）**七个**阶段，**其中验证、准备、解析三个部分统称为连接**（Linking）（*引自*[[1]](#####[1]深入理解Java虚拟机(第三版)-周志明)）
 
-<img src="imgs/image-20200904210055167.png" alt="image-20200904210055167" style="zoom: 80%;" />
+<img src="/resources/imgs/jvm/image-20200904210055167.png" alt="image-20200904210055167" style="zoom: 80%;" />
 
 > **注意**：
 >
@@ -392,7 +392,7 @@ false
 
 ##### 2）层级关系
 
-<img src="imgs/image-20200924160330978.png" alt="image-20200924160330978" style="zoom: 67%;" />
+<img src="/resources/imgs/jvm/image-20200924160330978.png" alt="image-20200924160330978" style="zoom: 67%;" />
 
 上图中表明的层级关系并不是Java中的继承关系，只是代码反应(以组合形式复用父加载器的代码)出来的逻辑上的层级关系，这很直观，引导类加载器没有父类，扩展类和应用程序类都有父类ClassLoader，但是在收到加载器请求时，会按照上图中的层级关系进行请求递交。
 
@@ -471,15 +471,15 @@ java的module是将不同分类的代码按照模块进行隔离，只是将JDK�
 
 变化前的继承关系
 
-<img src="imgs/image-20200924163302693.png" alt="image-20200924163302693" style="zoom: 80%;" />
+<img src="/resources/imgs/jvm/image-20200924163302693.png" alt="image-20200924163302693" style="zoom: 80%;" />
 
 变化后的继承关系
 
-<img src="imgs/image-20200924163345084.png" alt="image-20200924163345084" style="zoom: 80%;" />
+<img src="/resources/imgs/jvm/image-20200924163345084.png" alt="image-20200924163345084" style="zoom: 80%;" />
 
 ##### 3）双亲委派模型改动
 
-<img src="imgs/image-20200924163238575.png" alt="image-20200924163238575" style="zoom: 67%;" />
+<img src="/resources/imgs/jvm/image-20200924163238575.png" alt="image-20200924163238575" style="zoom: 67%;" />
 
 ##### 4）可访问关系验证
 
