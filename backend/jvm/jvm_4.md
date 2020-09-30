@@ -14,7 +14,7 @@ jps -<option>
 
 option可选选项如下
 
-<img src="/resources/imgs/jvm/image-20200911161056147.png" alt="image-20200911161056147" style="zoom:50%;" />
+![](/resources/imgs/jvm/image-20200911161056147.png)
 
 #### 4.1.2jstat（JVM Statistics Monitoring Tool）
 
