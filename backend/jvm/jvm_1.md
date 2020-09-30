@@ -16,7 +16,7 @@ Java虚拟机有自己完善的硬件架构，如**处理器、堆栈、寄存�
 
 #### 1.1.2架构图
 
-<img src="/resources/imgs/jvm/image-20200904162122124.png" alt="image-20200904162122124" style="zoom:80%;" />
+<img src="/MyNoteBooks/resources/imgs/jvm/image-20200904162122124.png" alt="image-20200904162122124" style="zoom:80%;" />
 
 如上图所示，JVM收到字节码后会经历以下步骤
 
