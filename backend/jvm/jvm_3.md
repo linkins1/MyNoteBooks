@@ -369,7 +369,7 @@ CMS收集器基于**标记-清除**算法
 
 下图为CMS的执行流程图
 
-![image-20200910165715990](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200910165715990.png)
+![image-20200910165715990](img/image-20200910165715990.png)
 
 ###### （2）特性
 
