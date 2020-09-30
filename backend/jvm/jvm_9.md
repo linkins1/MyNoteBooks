@@ -8,7 +8,7 @@
 
 具体执行的步骤有如下部分
 
-![image-20200929164743445](C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200929164743445.png)
+![image-20200929164743445](img/image-20200929164743445.png)
 
 > 此处省略了每一步的具体细节
 
@@ -220,7 +220,7 @@ public static void main(String[] args) {
 
 当程序运行环境中内存资源限制较大，可以使用解释执行节约内存（如部分嵌入式系统中只有解释器的存在），反之可以使用编译执行来提升效率
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200929165341076.png" alt="image-20200929165341076" style="zoom:67%;" />
+<img src="img/image-20200929165341076.png" alt="image-20200929165341076" style="zoom:67%;" />
 
 
 
