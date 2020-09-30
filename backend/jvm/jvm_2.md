@@ -4,7 +4,7 @@
 
 #### 2.1.1架构图
 
-<img src="imgs/image-20200906143336489.png" alt="image-20200906143336489" style="zoom:50%;" />
+<img src="img/image-20200906143336489.png" alt="image-20200906143336489" style="zoom:50%;" />
 
 从上图可以看出，运行时数据区域(**Runtime Data Areas**)包括以下几部分
 
@@ -18,7 +18,7 @@
 
 JDK1.8之后，架构图如下
 
-<img src="imgs/image-20200910135307560.png" alt="image-20200910135307560" style="zoom: 67%;" />
+<img src="img/image-20200910135307560.png" alt="image-20200910135307560" style="zoom: 67%;" />
 
 主要的区别是
 
@@ -232,7 +232,7 @@ Heap dump file created [22045981 bytes in 0.663 secs]
 
 由于GC工作时会对不同属性（是否消亡，何时创建）的对象进行区分对待，因而得到如下格式的内存结构
 
-<img src="imgs/image-20200910134457116.png" alt="image-20200910134457116" style="zoom: 67%;" />
+<img src="img/image-20200910134457116.png" alt="image-20200910134457116" style="zoom: 67%;" />
 
 其中年轻代/新生代和老年代同属于Java堆区，而元空间替代了过去方法区的位置。
 
@@ -240,7 +240,7 @@ Heap dump file created [22045981 bytes in 0.663 secs]
 
 执行流程如下：
 
-<img src="imgs/image-20200910141713815.png" alt="image-20200910141713815" style="zoom:67%;" />
+<img src="img/image-20200910141713815.png" alt="image-20200910141713815" style="zoom:67%;" />
 
 :one:将对象分配到Eden区
 
@@ -452,7 +452,7 @@ class void TestClass(){
 
 包括hashcode、线程持有的锁等，这一部分称为Mark Word
 
-<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20200907111257214.png" alt="image-20200907111257214" style="zoom:50%;" />
+<img src="img/image-20200907111257214.png" alt="image-20200907111257214" style="zoom:50%;" />
 
 ###### （2）类型指针
 
@@ -478,7 +478,7 @@ class void TestClass(){
 
 Java**堆**中将可能会**划分出一块内存**来作为**句柄池**，reference中存储的就是**对象的句柄地址**，而句柄中包含了对象实例数据（成员变量）与类型数据（静态变量）**各自具体的地址信息**，其结构如下所示。
 
-<img src="imgs/image-20200907134819947.png" alt="image-20200907134819947" style="zoom: 50%;" />
+<img src="img/image-20200907134819947.png" alt="image-20200907134819947" style="zoom: 50%;" />
 
 ###### （2）优势
 
@@ -490,7 +490,7 @@ Java**堆**中将可能会**划分出一块内存**来作为**句柄池**，refe
 
 Java堆中对象的内存布局就必须考虑如何放置**访问类型数据的相关信息**，reference中存储的直接就是**对象地址**，如果只是访问对象本身的话，就不需要多一次间接访问的开销，如下所示。
 
-<img src="imgs/image-20200907134954269.png" alt="image-20200907134954269" style="zoom:50%;" />
+<img src="img/image-20200907134954269.png" alt="image-20200907134954269" style="zoom:50%;" />
 
 ###### （2）优势
 
