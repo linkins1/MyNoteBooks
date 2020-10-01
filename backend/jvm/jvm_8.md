@@ -12,7 +12,7 @@
 
 :four: 栈帧结构
 
-<img src="/resources/imgs/jvm/image-20200929145657521.png" alt="image-20200929145657521" style="zoom: 67%;" />
+<img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/jvm/image-20200929145657521.png" alt="image-20200929145657521" style="zoom: 67%;" />
 
 #### 8.1.1局部变量表
 
@@ -48,7 +48,7 @@
 
 为了**加速方法调用**，可以在方法调用时就可以和局部变量表直接**共用**一部分数据，这样就无须进行**额外的参数复制传递**，如下所示
 
-<img src="/resources/imgs/jvm/image-20200929151901243.png" alt="image-20200929151901243" style="zoom: 67%;" />
+<img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/jvm/image-20200929151901243.png" alt="image-20200929151901243" style="zoom: 67%;" />
 
 ##### 8.1.3 动态连接
 

@@ -63,7 +63,7 @@ Hibernate数据库移植性远大于MyBatis。Hibernate通过它强大的映射�
 
 表格如下
 
-![mybatis1_usertableinfo](/resources/imgs/mybatis/mybatis1_usertableinfo.png)
+![mybatis1_usertableinfo](https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/mybatis/mybatis1_usertableinfo.png)
 
 ### 1.2.3 编写POJO
 
@@ -410,7 +410,7 @@ void deleteUserWithXML(int id);
 
 ##### （1）parameterType
 
-此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](###_224别名注册)，所以可以将此转型为Integer
+此处由于方法参数类型是int，那么可以制定为INT，由于Mybatis设定了[别名规则](###2.2.4别名注册)，所以可以将此转型为Integer
 
 ##### （2）占位符
 
@@ -1214,7 +1214,7 @@ jdbc.password=1234
 
 #### 3.1.1获得数据库连接对象
 
-![](/resources/imgs/mybatis/image-stacktrace.png)
+<img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/mybatis/image-stacktrace.png" alt="image-stacktrace" style="zoom:80%;" />
 
 跟踪preparedStatement对象的构建的trace为上图，可以看出当使用POOLED模式时，使用的是构建preparedStatement对象使用的Connection对象通过PooledDataSource的getConnection方法得到，在深入这个方法体之前，首先来熟悉下面几个类
 
@@ -1647,7 +1647,7 @@ sperator:代表分隔符
 
 - ofType
 
-  collection的property对应的java类
+  collection的property对应集合中需要的java类
 
 ## 4.Mybatis加载与缓存
 
@@ -1914,10 +1914,4 @@ List<UserWithAccount> findUserAccountLoad();
 @CacheNamespace(blocking=true)
 public interface UserDaoAnno {...}
 ```
-
-
-
-
-
-
 
