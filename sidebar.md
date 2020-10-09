@@ -1,3 +1,4 @@
 - **后端**
   - [Mybatis](backend/mybatis/index.md)
   - [JVM](backend/jvm/jvm_index.md)
+  - [Redis](backend/redis/redis_index.md)
