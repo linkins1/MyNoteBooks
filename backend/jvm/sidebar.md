@@ -1,4 +1,4 @@
-- **JVM笔记**
+- ***JVM*笔记**
   - [JVM1-概述](/backend/jvm/jvm_1.md)
   - [JVM2-自动内存管理](/backend/jvm/jvm_2.md)
   - [JVM3-GC与内存分配策略](/backend/jvm/jvm_3.md)
