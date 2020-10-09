@@ -1,4 +1,4 @@
-- *Redis笔记**
+- ***Redis*笔记**
   - [1-NoSql概述](/backend/redis/redis_1.md)
   - [2-Redis概述](/backend/redis/redis_2.md)
   - [3-Redis数据结构](/backend/redis/redis_3.md)
