@@ -4,3 +4,6 @@
   - *2.Spring Security相关*
     - [2.1认证](/backend/OpenSourceProjs/vhr/vhr_2_ss.md)
     - [2.2授权](/backend/OpenSourceProjs/vhr/vhr_3_ss.md)
+  - *#.附录*
+    - [#1自定义FilterSecurityInterceptor](/backend/OpenSourceProjs/vhr/vhr_#1_ss.md)
+    - [#2验证码实现](/backend/OpenSourceProjs/vhr/vhr_#2_ss.md)
