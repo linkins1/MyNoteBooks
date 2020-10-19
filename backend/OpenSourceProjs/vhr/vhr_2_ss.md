@@ -26,7 +26,7 @@ public void verifyCode(HttpServletRequest request, HttpServletResponse resp) thr
 
 在用户发来登陆请求时，会验证这个text和用户输入的text是否一致达到验证码匹配的效果
 
-> VerificationCode源码解读参见[验证码](https://github.com/linkins1/MyNoteBooks/blob/master/backend/OpenSourceProjs/vhr/vhr_%232_ss.md)
+> VerificationCode源码解读参见[验证码](/backend/OpenSourceProjs/vhr/vhr_%232_ss.md)
 
 ### 2.2输入信息并登陆（认证）
 
