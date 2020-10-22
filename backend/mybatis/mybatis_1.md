@@ -524,6 +524,16 @@ public void findUserByAddressXML(){
 
   使用'%${value}%'的方式使用的是字符串拼接，使用的是Statement来创建sql语句，存在sql注入问题，且${}中的变量名必须为value
 
+> ### **Q.#{}与${}的区别**
+>
+> #{}将传入的**参数当作字符串**，解析后会对所有的数据**加双引号**，也即#{name}，如果name=lily，显示"lily"
+>
+> ${}将传入的参数**直接输出**，也即也即${name}，如果name=lily，显示lily
+>
+> 所以后者更容易受到sql注入攻击
+>
+> 此外，在使用order by 列名时，列名作为参数传入必须使用${}
+
 #### 3）分组查询
 
 ##### （1）定义接口
@@ -1822,6 +1832,74 @@ List<User> findAllUserWithAnn();
 
 与@Select注解相同
 
+#### 5.1.5 @Param
+
+这个注解有如下应用场景
+
+##### 1）方法有多个参数
+
+当mapper中的接口方法存在多个参数时，需要对每个参数都添加@Param注解，如下所示
+
+###### 1）Mapper
+
+```java
+Integer updateUserface(@Param("url") String url, @Param("id") Integer id);
+```
+
+###### 2）xml
+
+```xml
+<update id="updateUserface">
+    update hr set userface = #{url} where id=#{id};
+</update>
+```
+
+##### 2）xml中使用$取值
+
+由于存在sql注入问题，一般只有在order by获取列名时使用
+
+###### 1）Mapper
+
+```java
+List<User> getAllUsers(@Param("order_by")String order_by);
+```
+
+###### 2）xml
+
+```xml
+<select id="getAllUsers" resultType="org.javaboy.helloboot.bean.User">
+    select * from user
+    <if test="order_by!=null and order_by!=''">
+        order by ${order_by} desc
+    </if>
+</select>
+```
+
+##### 3）动态sql
+
+当xml中将mapper方法的某个参数作为了动态判断条件，那么即使只有一个参数也需要添加@Param
+
+###### 1）Mapper
+
+```xml
+List<User> getUserById(@Param("id")Integer id);
+```
+
+###### 2）xml
+
+```xml
+<select id="getUserById" resultType="org.javaboy.helloboot.bean.User">
+    select * from user
+    <if test="id!=null">
+        where id=#{id}
+    </if>
+</select>
+```
+
+> @Param部分借鉴自[此贴](https://juejin.im/post/6844903894997270536)
+
+### 
+
 ### 5.2映射注解
 
 #### 5.2.1@Results
@@ -1914,4 +1992,5 @@ List<UserWithAccount> findUserAccountLoad();
 @CacheNamespace(blocking=true)
 public interface UserDaoAnno {...}
 ```
+
 
