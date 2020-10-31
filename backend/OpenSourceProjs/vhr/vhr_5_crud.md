@@ -294,7 +294,7 @@ public Integer addEmp(Employee employee) {
 }
 ```
 
-上面方法体中首先计算出合同期（ContractTerm）并将其设定给employee对象，之后调用`insertSelective`函数完成插入，插入成功后，会先获取出刚刚插入的emp对象，之后向emp中存储的邮箱地址通过rabbitmq发送出去，邮箱发送见[发送邮件](./vhr_6_mail)部分，此处仅介绍插入的mapper
+上面方法体中首先计算出合同期（ContractTerm）并将其设定给employee对象，之后调用`insertSelective`函数完成插入，插入成功后，会先获取出刚刚插入的emp对象，之后向emp中存储的邮箱地址通过rabbitmq发送出去，邮箱发送见[发送邮件](./vhr_6_mail.md)部分，此处仅介绍插入的mapper
 
 ##### 3）Dao
 
