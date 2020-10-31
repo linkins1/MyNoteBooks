@@ -11,7 +11,7 @@
   - *#.附录*
     - [#1自定义FilterSecurityInterceptor](/backend/OpenSourceProjs/vhr/vhr_%231_ss.md)
     - [#2验证码实现](/backend/OpenSourceProjs/vhr/vhr_%232_ss.md)
-    - [#3全局异常](/backend/OpenSourceProjs/vhr/vhr_%233_ss.md)
-    - [#4文件上传下载](/backend/OpenSourceProjs/vhr/vhr_%234_ss.md)
-    - [#5日志](/backend/OpenSourceProjs/vhr/vhr_%235_ss.md)
-    - [#6缓存](/backend/OpenSourceProjs/vhr/vhr_%236_ss.md)
+    - [#3全局异常](/backend/OpenSourceProjs/vhr/vhr_%233_exp.md)
+    - [#4文件上传下载](/backend/OpenSourceProjs/vhr/vhr_%234_io.md)
+    - [#5日志](/backend/OpenSourceProjs/vhr/vhr_%235_logging.md)
+    - [#6缓存](/backend/OpenSourceProjs/vhr/vhr_%236_caching.md)
