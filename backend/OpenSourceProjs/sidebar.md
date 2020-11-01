@@ -1,2 +1,4 @@
 - **开源项目**
-  - [*vhr-notes*](/backend/OpenSourceProjs/vhr/vhr_index.md)
+  - *vhr*
+    - [*项目源地址*](/backend/OpenSourceProjs/vhr/vhr_index.md)
+    - [*学习笔记*](/backend/OpenSourceProjs/vhr/vhr_index.md)
