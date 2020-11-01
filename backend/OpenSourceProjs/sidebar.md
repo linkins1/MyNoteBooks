@@ -1,2 +1,2 @@
 - **开源项目**
-  - [*vhr*](/backend/OpenSourceProjs/vhr/vhr_index.md)
+  - [*vhr-notes*](/backend/OpenSourceProjs/vhr/vhr_index.md)
