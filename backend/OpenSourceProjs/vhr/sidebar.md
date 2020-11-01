@@ -7,7 +7,7 @@
   - *3.Spring Boot相关*
     - [3.1日期转换](/backend/OpenSourceProjs/vhr/vhr_4_date.md)
     - [3.2CRUD](/backend/OpenSourceProjs/vhr/vhr_5_crud.md)
-    - [3.3CRUD](/backend/OpenSourceProjs/vhr/vhr_6_mail.md)
+    - [3.3邮件发送](/backend/OpenSourceProjs/vhr/vhr_6_mail.md)
   - *#.附录*
     - [#1自定义FilterSecurityInterceptor](/backend/OpenSourceProjs/vhr/vhr_%231_ss.md)
     - [#2验证码实现](/backend/OpenSourceProjs/vhr/vhr_%232_ss.md)
