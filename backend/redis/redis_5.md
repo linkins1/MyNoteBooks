@@ -85,7 +85,7 @@
 - 对数据进行更新，定义新的版本号NewVersion=OldVersion+1
 - 按照OldVersion查看版本号，如果版本号一致，则更新为NewVersion；否则，代表该字段的版本号被修改过，放弃更新
 
-:two: CAS（Check And Set）
+:two: CAS（Compare And Swap）
 
 与版本号策略类似，CAS规定了进行一次更新操作的步骤如下
 
