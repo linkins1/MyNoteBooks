@@ -430,7 +430,7 @@ class void TestClass(){
 
 ###### （1）对内存分配动作做同步
 
-​	虚拟机采用CAS(Compare And Sweep)和失败重试的方式保证内存分配的原子性
+​	虚拟机采用CAS(Compare And Swap)和失败重试的方式保证内存分配的原子性
 
 ###### （2）把内存分配的动作在每个线程中独立进行
 
