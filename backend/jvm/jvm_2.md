@@ -6,7 +6,7 @@
 
 <img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/jvm/image-20200906143336489.png" alt="image-20200906143336489" style="zoom:50%;" />
 
-从上图可以看出，运行时数据区域(**Runtime Data Areas**)包括以下几部分
+从上图可以看出，JVM从主机内存中划分出一块内存，并称作运行时数据区域(**Runtime Data Areas**)，其包括以下几部分
 
 - 程序计数器(PC Registers)
 - Java虚拟机栈(Stack Area)
