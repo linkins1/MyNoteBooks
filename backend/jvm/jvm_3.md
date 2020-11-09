@@ -144,8 +144,7 @@ public class ReferenceCountingGC {
 
 ##### 1）弱分代假说（Weak Generational Hypothesis）：绝大多数对象都是朝生夕灭的。
 
-##### 2）强分代假说（Strong Generational Hypothesis）：熬过越多次垃圾收集过程的对象就越难以消
-亡。
+##### 2）强分代假说（Strong Generational Hypothesis）：熬过越多次垃圾收集过程的对象就越难以消亡。
 
 ##### 3）跨代引用假说（Intergenerational Reference Hypothesis）：跨代引用相对于同代引用来说仅占极
 少数。
