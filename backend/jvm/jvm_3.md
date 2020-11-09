@@ -146,8 +146,7 @@ public class ReferenceCountingGC {
 
 ##### 2）强分代假说（Strong Generational Hypothesis）：熬过越多次垃圾收集过程的对象就越难以消亡。
 
-##### 3）跨代引用假说（Intergenerational Reference Hypothesis）：跨代引用相对于同代引用来说仅占极
-少数。
+##### 3）跨代引用假说（Intergenerational Reference Hypothesis）：跨代引用相对于同代引用来说仅占极少数。
 
 这通过这三个法则可知，我们需要将Java堆的内存进行划片管理，常用的划片方式是分为新生代(young generation)和老年代(old generation)，新生代中存放朝生夕灭的对象，老年代中存放难以消亡的对象。
 
