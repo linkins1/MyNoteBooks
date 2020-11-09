@@ -405,8 +405,8 @@ at org.fenixsoft.oom.RuntimeConstantPoolOOM.main(RuntimeConstantPoolOOM.java: 18
 
 > Java堆是否规整取决于GC是否带有空间压缩能力。
 >
-> - 如果支持压缩，那么久采用弹动指针的方式
-> - 如果不支持压缩，且使用基于清除算法(如CMS-Concurrent Mark Sweep)的GC时，采用释放列表的方式
+> - 如果支持压缩，那么就采用弹动指针的方式
+> - 如果不支持压缩，且使用基于标记-清除算法(如CMS-Concurrent Mark Sweep)的GC时，采用释放列表的方式
 
 ##### 2-2）对象创建的同步方式
 
