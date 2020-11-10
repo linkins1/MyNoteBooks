@@ -126,7 +126,7 @@ const #21 = Asciz TestClass.java;
 
 常量池入口从offset=8开始，头两个字节代表常量池中的常量数目，观察为0x0016，也即22，由于索引0保留，索引有21个常量。
 
-接着就是常量池中的每个表，首先为tag字段，此处为0x07，查[表](######常量池项目类型)得此**tag为CONSTANT_Class_info型常量**，此常量(表)的第二个字段是u2类型的，存储的是常量池中的索引值(也叫做对应常量的**符号引用**)，本例子中为0x0002，也即指向常量池中的第二个常量，第二个常量的tag为0x01，查表为CONSTANT_Utf8_info类型，常量(表)的第二个字段是u2类型的，代表表中存储的字符串长度是多少字节(length个)，之后紧跟的是length个u1类型的字节，用于存储真正的常量值。本例中长度为0x001D，也即29个字节，那么证明从offset第二行开始的29个字节为实际的常量值，换算可知为org/fenixsoft/clazz/TestClass
+接着就是常量池中的每个表，首先为tag字段，此处为0x07，查[表](常量池项目类型)得此**tag为CONSTANT_Class_info型常量**，此常量(表)的第二个字段是u2类型的，存储的是常量池中的索引值(也叫做对应常量的**符号引用**)，本例子中为0x0002，也即指向常量池中的第二个常量，第二个常量的tag为0x01，查表为CONSTANT_Utf8_info类型，常量(表)的第二个字段是u2类型的，代表表中存储的字符串长度是多少字节(length个)，之后紧跟的是length个u1类型的字节，用于存储真正的常量值。本例中长度为0x001D，也即29个字节，那么证明从offset第二行开始的29个字节为实际的常量值，换算可知为org/fenixsoft/clazz/TestClass
 
 ##### 4）访问标志
 
@@ -444,7 +444,7 @@ finally {
 
 ###### 常量池项目类型
 
-![image-20200921150606737](https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/image-20200921150606737.png)
+![image-20201110151735758](https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/jvm/image-20201110151712335758.png)
 
 
 
