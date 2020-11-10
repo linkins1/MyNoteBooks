@@ -222,7 +222,7 @@ const #6 = Asciz I;
 | 方法名                                                       | 描述符              |
 | :----------------------------------------------------------- | ------------------- |
 | void inc()                                                   | ()V                 |
-| indexOf(char[]source，int sOffset，int sCount，char[]target，int tOffset，int tCount，int fIndex) | ([CII[CIII)I        |
+| int indexOf(char[]source，int sOffset，int sCount，char[]target，int tOffset，int tCount，int fIndex) | ([CII[CIII)I        |
 | java.lang.String toString()                                  | ()Ljava/lang/String |
 
 ###### （2）示例
