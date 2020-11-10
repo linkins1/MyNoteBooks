@@ -196,7 +196,7 @@ protected int iArr[];
 
 ![image-20200921161226530](https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/jvm/image-20200921161226530.png)
 
-上图中，前两个字节代表计数值，为0x0001，代表只有一个字段，之后的字段是0x0002，代表是private，之后是0x0005，指向常量池中第五个常量为m，之后是0x0006，只想常量池中的第六个常量为I，因而可以反推出这个字段为private int m
+上图中，前两个字节代表计数值，为0x0001，代表只有一个字段，之后的字段是0x0002，代表是private，之后是0x0005，指向常量池中第五个常量为m，之后是0x0006，指向常量池中的第六个常量为I，因而可以反推出这个字段为private int m
 
 ```text
 const #5 = Asciz m;
