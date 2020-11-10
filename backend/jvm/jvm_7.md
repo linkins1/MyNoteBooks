@@ -379,7 +379,7 @@ class org.fenixsoft.classloading.ClassLoaderTest
 false
 ```
 
-上面例子中，首先通过引导类加载器将ClassLoaderTest加载，但是在创建obj时，使用的是自定义的类加载器，所以即使obj的全限定类名也是ClassLoaderTest，但是由于类加载器不同，因而instanceof报错
+上面例子中，首先通过应用程序类加载器将ClassLoaderTest加载，但是在创建obj时，使用的是自定义的类加载器，所以即使obj的全限定类名也是ClassLoaderTest，但是由于类加载器不同，因而instanceof报错
 
 #### 7.4.3 双亲委派模型（Parents Delegation Model）
 
