@@ -4,7 +4,7 @@
 
 #### 7.1.1类加载流程
 
-一个类型从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期将会经历**加载**（Loading）、验证（Verification）、**准备**（Preparation）、**解析**（Resolution）、**初始化**（Initialization）、**使用**（Using）和**卸载**（Unloading）**七个**阶段，**其中验证、准备、解析三个部分统称为连接**（Linking）（*引自*[[1]](#####[1]深入理解Java虚拟机(第三版)-周志明)）
+一个类型从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期将会经历**加载**（Loading）、**验证**（Verification）、**准备**（Preparation）、**解析**（Resolution）、**初始化**（Initialization）、**使用**（Using）和**卸载**（Unloading）**七个**阶段，**其中验证、准备、解析三个部分统称为连接**（Linking）（*引自*[[1]](#####[1]深入理解Java虚拟机(第三版)-周志明)）
 
 <img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/jvm/image-20200904210055167.png" alt="image-20200904210055167" style="zoom: 80%;" />
 
