@@ -1,4 +1,4 @@
 - ***并发*笔记**
   - 1-基础篇
-    - [1-1-并发编程基础](/backend/concurrent/con_1_1.md)
-    - [1-2-并发编程其他基础](/backend/concurrent/con_1_2.md)
+    - [1-1 并发编程基础](/backend/concurrent/con_1_1.md)
+    - [1-2 并发编程其他基础](/backend/concurrent/con_1_2.md)
