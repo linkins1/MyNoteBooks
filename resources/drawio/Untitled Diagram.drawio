@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-11T05:51:56.610Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="xCJzQbxdNZzQhiZe8m1A" version="13.9.3" type="github" pages="18">
+<mxfile host="app.diagrams.net" modified="2020-11-11T05:52:31.593Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="_YxSqEkgQ9qX63IWycMP" version="13.9.3" type="github" pages="18">
   <diagram id="c8kAMgYa_nflIfkOADPL" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2213,10 +2213,10 @@
         <mxCell id="GoobYLJma6dgfMHV0GR2-18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GoobYLJma6dgfMHV0GR2-1">
           <mxGeometry x="330" y="290" width="620" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GoobYLJma6dgfMHV0GR2-19" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 16px&quot;&gt;线程ID&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GoobYLJma6dgfMHV0GR2-1">
+        <mxCell id="GoobYLJma6dgfMHV0GR2-19" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 16px&quot;&gt;偏向线程ID&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GoobYLJma6dgfMHV0GR2-1">
           <mxGeometry x="260" y="290" width="520" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GoobYLJma6dgfMHV0GR2-20" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 14px&quot;&gt;Epoch&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GoobYLJma6dgfMHV0GR2-1">
+        <mxCell id="GoobYLJma6dgfMHV0GR2-20" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 14px&quot;&gt;偏向时间戳&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GoobYLJma6dgfMHV0GR2-1">
           <mxGeometry x="720" y="290" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GoobYLJma6dgfMHV0GR2-21" value="&lt;span style=&quot;font-family: &amp;#34;comic sans ms&amp;#34; ; font-size: 14px&quot;&gt;对象分代年龄&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GoobYLJma6dgfMHV0GR2-1">
