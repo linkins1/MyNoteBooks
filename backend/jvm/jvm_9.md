@@ -181,7 +181,8 @@ public boolean equals(Object obj) {
 }
 ```
 
-> 可以通过指定jvm参数来改变IntegerCache的上限`-Djava.lang.Integer.IntegerCache.high=255`
+> 1.可以通过指定jvm参数来改变IntegerCache的上限`-Djava.lang.Integer.IntegerCache.high=255`
+> 2.在包装类的常量池范围内，使用valueOf方法可以直接从常量池内获取对象，但是对于超出范围的部分，调用此方法和直接new一个对象是相同的
 
 ##### 3）条件编译
 
