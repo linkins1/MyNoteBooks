@@ -181,6 +181,8 @@ public boolean equals(Object obj) {
 }
 ```
 
+> 可以通过指定jvm参数来改变IntegerCache的上限`-Djava.lang.Integer.IntegerCache.high=255`
+
 ##### 3）条件编译
 
 观察下面的例子
