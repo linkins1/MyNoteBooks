@@ -175,7 +175,7 @@ public void run() {
 }
 ```
 
-这里就会用到`Callable对象`，来执行其`call`方法返回值为result，这里需要注意，FutureTask中的set方法会在run方法执行成功时调用set方法将返回值设定给成员变量`outcome`，这一步是由JVM完成的，之后调用get方法获取返回值时，也是返回这个`outcome`
+这里就会用到`Callable对象`，来执行其`call`方法返回值为result，这里需要注意，FutureTask中的set方法会在run方法执行成功时设定`ran=true`，并调用set方法将返回值设定给成员变量`outcome`，之后调用get方法获取返回值时，也是返回这个`outcome`
 
 **综上所述，**
 
