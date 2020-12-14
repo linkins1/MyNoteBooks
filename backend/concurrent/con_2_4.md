@@ -8,7 +8,7 @@
 
 ##### 1） UML图
 
-<img src="C:%5CUsers%5C123%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201115140908269.png" alt="image-20201115140908269" style="zoom: 67%;" />
+<img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/concurrent/image-20201115140908269.png" alt="image-20201115140908269" style="zoom: 67%;" />
 
 此类实现了如下**接口**
 
