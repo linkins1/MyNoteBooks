@@ -736,6 +736,16 @@ public E take() throws InterruptedException {
 
 ### :four: Map 
 
-#### 2.4.7 `ConcurrentSkipListMap`
+#### 2.4.7`ConcurrentHashMap`
+
+- **原理部分参见**
+
+  [JavaGuide](https://snailclimb.gitee.io/javaguide/#/docs/java/collection/ConcurrentHashMap%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90)(JDK7/8涉及)及[cyc2018](https://snailclimb.gitee.io/javaguide/#/docs/java/collection/ConcurrentHashMap%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90)(主要为JDK7)
+
+- **关于JDK7中头插法导致循环引用参见**
+
+  [并发编程(13)：HashMap的线程安全问题分析以及ConcurrentHashMap的实现原理](https://www.codenong.com/cs107062724/)
+
+#### 2.4.8 `ConcurrentSkipListMap`
 
 参见[JavaGuide的ConcurrentSkipListMap部分]([JavaGuide (gitee.io)](https://snailclimb.gitee.io/javaguide/#/docs/java/multi-thread/并发容器总结?id=六-concurrentskiplistmap))
