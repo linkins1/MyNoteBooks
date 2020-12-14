@@ -740,7 +740,7 @@ public E take() throws InterruptedException {
 
 - **原理部分参见**
 
-  [JavaGuide](https://snailclimb.gitee.io/javaguide/#/docs/java/collection/ConcurrentHashMap%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90)(JDK7/8涉及)及[cyc2018](https://snailclimb.gitee.io/javaguide/#/docs/java/collection/ConcurrentHashMap%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90)(主要为JDK7)
+  [JavaGuide](https://snailclimb.gitee.io/javaguide/#/docs/java/collection/ConcurrentHashMap%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90)(JDK7/8涉及)及[cyc2018](http://www.cyc2018.xyz/Java/Java%20%E5%AE%B9%E5%99%A8.html#concurrenthashmap)(主要为JDK7)
 
 - **关于JDK7中头插法导致循环引用参见**
 
