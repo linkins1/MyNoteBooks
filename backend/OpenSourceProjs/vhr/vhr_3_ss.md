@@ -428,6 +428,6 @@ public void decide(Authentication authentication, Object object, Collection<Conf
 
 上面使用了两个自定义类`CustomFilterInvocationSecurityMetadataSource`和`CustomUrlDecisionManager`
 
-但是仅仅用`@Component`标记并不能使两个类生效，这是因为`FilterSecurityInterceptor`在最初配置时），会采用默认的两个Bean，分别是`DefaultFilterInvocationSecurityMetadataSource`和`AffirmativeBased`，所以需要替换掉原来默认的Bean。
+但是仅仅用`@Component`标记并不能使两个类生效，这是因为`FilterSecurityInterceptor`在最初配置时，会采用默认的两个Bean，分别是`DefaultFilterInvocationSecurityMetadataSource`和`AffirmativeBased`，所以需要替换掉原来默认的Bean。
 
 > 具体的自定义方式参见我的另一篇文章[定制FilterSecurityInterceptor](/backend/OpenSourceProjs/vhr/vhr_%231_ss.md)
