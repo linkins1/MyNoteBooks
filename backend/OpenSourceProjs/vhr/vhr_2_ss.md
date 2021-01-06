@@ -279,7 +279,7 @@ SS中的Filters的执行顺序大抵如下
     >
     > **而AuthenticationManagerBuilder的配置又可以在WebSecurityConfigurerAdapter中通过configure函数完成，所以可以自定义类继承与WebSecurityConfigurerAdapter并完成重写**
 
-- #### PasswordEncoder
+  - #### PasswordEncoder
 
   由于存储在数据库中的用户信息的密码不会以明文的形式存在，所以需要提供一个密码编码器，将密码编为密文存储在数据库中。
 
