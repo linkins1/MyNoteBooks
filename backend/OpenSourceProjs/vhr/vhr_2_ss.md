@@ -287,7 +287,7 @@ SS中的Filters的执行顺序大抵如下
 
   - #### DaoAuthenticationProvider
 
-    这个类是`AuthenticationProvider`的实现类，其会利用UserDetailService（用于查询用户信息）和密码编码器（对密文解密）得到存储在数据库中的用户信息的解密版本（`UserDetails对象`）并于用户提交的认证信息（`UsernamePasswordAuthenticationToken对象`）比较。
+    这个类是`AuthenticationProvider`的实现类，其会利用UserDetailService（用于查询用户信息）和密码编码器（对密文解密）得到存储在数据库中的用户信息的解密版本（`UserDetails对象`）并于用户提交的认证信息（`UsernamePasswordAuthenticationToken对象`）比较。在`InitializeUserDetailsBeanManagerConfigurer.InitializeUserDetailsManagerConfigurer`方法中会对`AbstractDaoAuthenticationConfigurer`中创建的`DaoAuthenticationProvider`对象中的`userDetailsService`属性进行赋值。
 
     如果认证失败，中间会抛出异常可能为`UsernameNotFoundException`或者`AuthenticationException`
 
