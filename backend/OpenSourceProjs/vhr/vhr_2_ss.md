@@ -454,7 +454,7 @@ public Authentication attemptAuthentication(HttpServletRequest request,
 }
 ```
 
-可见，其主要操作是将request封装为UserDetails。
+可见，其主要操作是将request封装为Authentication对象。
 
 由于vhr中要**增加验证码的校验环节**，并**设定UsernamePasswordAuthenticationToken中的principal属性为Hr对象**
 
