@@ -24,7 +24,7 @@
 
   `name={"lastName"="lily"}&date=2019-01-01`
 
-表单提交的数据**虽说**会放入请求体中以键值对的形式存在，但是在**sevlet**实现中，对于**application/x-www-form-urlencoded**类型的表单，会将请求体中的参数会被解析成parameters（具体的处理见[此文](https://hongjiang.info/http-application-x-www-form-urlencoded/)），这样**最终的效果就等同于提交了一个GET请求**，**url中携带了要传输的参数**，这些参数同样会被放入parameters中（一个ConcurrentHashMap）
+表单提交的数据**虽说**会放入请求体中以键值对的形式存在，但是在**tomcat**中，对于**application/x-www-form-urlencoded**类型的表单，会将请求体中的参数会被解析成parameters（具体的处理见[此文](https://hongjiang.info/http-application-x-www-form-urlencoded/)），这样**最终的效果就等同于提交了一个GET请求**，**url中携带了要传输的参数**，这些参数同样会被放入parameters中（一个ConcurrentHashMap）
 
 这样，就可以**servlet**中可以通过`request.getParameter(key)`来获得，**那么在Spring MVC中，就可以利用`@RequestParam`也就可以拿到（这也是为什么`@RequestParam`不只可以用于`GET`请求）**
 
@@ -494,6 +494,8 @@ Tomcat是servlet等的实现（容器），作为HTTP请求的第一站和服务
 #### #4 
 
 [Tomcat创建servlet的流程](https://blog.csdn.net/chenmixuexi_/article/details/73614504)
+
+[Tomcat与servlet的关系](https://objcoding.com/2019/05/30/tomcat-architecture/)
 
 #### #5
 
