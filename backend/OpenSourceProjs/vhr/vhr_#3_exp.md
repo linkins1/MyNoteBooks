@@ -57,7 +57,7 @@ RespBean提供了几种静态方法（工厂模式），用来构造不同的异
 
 由于这两个类中的onAuthenticationSuccess（用于认证成功时执行）和onAuthenticationFailure方法（用于捕获认证过滤器调用的认证方法所抛出的异常）都是`AbstractAuthenticationProcessingFilter`（常为`UsernamePasswordAuthenticationFilter`）放行时要执行的方法，只能采用从response对象获取输出流的形式来输出信息到前端。
 
-vhr中采用两个啦，lambda表达式来重写这两个方法，如下
+vhr中采用两个lambda表达式来重写这两个方法，如下
 
 ###### （1）成功时
 
