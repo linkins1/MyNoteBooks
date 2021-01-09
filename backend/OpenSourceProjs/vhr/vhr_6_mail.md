@@ -10,7 +10,7 @@
 
 ##### 2）javax.mail发送邮件
 
-<img src="C:%5CUsers%5C123%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201026133940010.png" alt="image-20201026133940010" style="zoom: 67%;" />
+<img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/vhr/image-20201026133940123010.png" alt="image-20201026133940010" style="zoom: 67%;" />
 
 #### 6.1.2 SMTP（**Simple Mail Transfer Protocol**）
 
