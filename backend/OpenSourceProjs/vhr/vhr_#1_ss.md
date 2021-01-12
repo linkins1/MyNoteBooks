@@ -333,3 +333,12 @@ protected void configure(HttpSecurity http) throws Exception {
 
 ### 至此，定制FilterSecurityInterceptor就完成了！
 
+### #附
+
+FilterSecurityInterceptor的定制同样可以采用类似于LoginFilter(UsernamePasswordAuthenticationFilter)的方式，即帝定义子类继承于FilterSecurityInterceptor并在SecurityConfig中定义Bean并在configure方法中使用
+
+```java
+http.addFilterAt(loginFilter(),FilterSecurityInterceptor.class);
+```
+
+来更换过滤器链中的此过滤器
