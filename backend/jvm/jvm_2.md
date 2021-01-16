@@ -235,7 +235,7 @@ Heap dump file created [22045981 bytes in 0.663 secs]
 
 <img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/jvm/image-20200910134457116.png" alt="image-20200910134457116" style="zoom: 67%;" />
 
-其中年轻代/新生代和老年代同属于Java堆区，而元空间替代了过去方法区的位置。
+其中年轻代/新生代和老年代同属于Java堆区，而元空间的一部分实际上也存放在堆区，但逻辑上属于方法区
 
 其中年轻代又分为伊甸区(Eden)和两个幸存者区(Survivor)，分别为To Survivor、 From Survivor，这个两个区域的空间大小是一样的。在[标记-复制算法]()中，采用一个伊甸区+From Survivor区作为实际被占用的新生代内存区域。执行垃圾回收的时候Eden区域不能被回收的对象被放入到空的survivor（也就是To Survivor，同时Eden区域的内存会在垃圾回收的过程中全部释放），另一个survivor（即From Survivor）里不能被回收的对象也会被放入这个survivor（即To Survivor），然后To Survivor 和 From Survivor的标记会互换，始终保证一个survivor是空的，如果另一块Survivor区不足以放下仍然存活的对象，则采用[分配担保机制]()占用一部分老年代的内存将对象复制到其中。
 
