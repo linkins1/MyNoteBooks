@@ -183,7 +183,7 @@ private int m;
 protected int iArr[];
 ```
 
-那么对于sArr，其访问类型为private，所以访问标志为0x0002，由于String是对象类型，因而需要用**L加String的全限定类名**来标识，又因是二维数组，因而需要标记为`[[`，所以字段描述符为`[[Ljava/lang/String`
+那么对于sArr，其访问类型为private，所以访问标志为0x0002，由于String是引用类型，因而需要用**L加String的全限定类名**来标识，又因是二维数组，因而需要标记为`[[`，所以字段描述符为`[[Ljava/lang/String`
 
 同理，第三个字段会被标识为`[I` ，第二个字段会被标识为`I`
 
