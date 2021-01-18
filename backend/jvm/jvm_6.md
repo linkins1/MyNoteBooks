@@ -64,7 +64,7 @@ Class文件格式采用一种类似于C语言**结构体的伪结构**来存储�
 
 - 字面量
 
-  一般指**文本字符串**和**final修饰的常量**，以及类元信息和方法元信息，譬如Integer类中的内部类IntegerCache中的变量static final Integer[] cache，就是用于存储-128~127的整形变量，当定义了Integer i = 1；就会在常量池中获取这个对象。
+  一般指**文本字符串**和**final修饰的常量**，以及类元信息和方法元信息，譬如Integer类中的内部类IntegerCache中的变量static final Integer[] cache，就是用于存储介于-128~127的Integer对象，当定义了Integer i = 1；就会在常量池中获取这个对象。
 
 - 符号引用
 
