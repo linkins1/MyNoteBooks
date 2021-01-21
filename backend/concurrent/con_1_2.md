@@ -138,7 +138,7 @@ synchronized底层原理与管程很相似，有如下相似点
 
 如下图所示
 
-![img](https://upload-images.jianshu.io/upload_images/2062729-d1cc81ebcf0e912b.png)
+![img](https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/concurrent/2062729-d1cc81ebcf0e912312b.png)
 
 #### 1.2.4 volatile
 
