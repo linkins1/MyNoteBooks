@@ -570,23 +570,9 @@ JVM中，对象头的第一个字长的部分是Mark Word，锁的状态的修�
 >***A：***不会，由于轻量级锁的自旋操作开销很大，所以一般升级为重量级锁后不会回退
 
 
+#### # 附
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[**既然CPU有缓存一致性协议（MESI），为什么JMM还需要volatile关键字？ - 知乎 (zhihu.com)**](https://www.zhihu.com/question/296949412)
 
 [**JVM内存结构**、**Java内存模型**和**Java对象模型**](https://www.hollischuang.com/archives/2509)
+
