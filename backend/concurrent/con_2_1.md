@@ -80,6 +80,8 @@ Thread-B
 
 ##### 3）原理
 
+>每个线程都绑定一个ThreadLocalMap对象，父子线程间向**各自的**ThreadLocalMap对象中添加Entry时，Entry的key都相同，value是自定义，由此可见真正决定独立性的是每个线程内部独有的那一份ThreadLocalMap对象
+
 ###### （1）threadLocals
 
 在`Thread`类中，有一个成员变量如下
