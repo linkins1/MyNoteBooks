@@ -732,7 +732,7 @@ public E take() throws InterruptedException {
 
 > ***Q：如何理解无界？***
 >
-> ***A：***这里指的无界是指相较于前两种阻塞队列，**其没有capacity的限制**，因为capacity可以设定为小于Integer.MAX_VALUE的值，然而优先级阻塞队列仍然是由上界的，但是Integer.MAX_VALUE足够大，实际应用中足够代表无界。
+> ***A：***这里指的无界是指相较于前两种阻塞队列，**其没有capacity的限制**，因为capacity可以设定为小于Integer.MAX_VALUE的值，然而优先级阻塞队列仍然是有上界的，但是Integer.MAX_VALUE足够大，实际应用中足够代表无界。
 
 ### :four: Map 
 
