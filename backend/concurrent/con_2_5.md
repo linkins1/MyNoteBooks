@@ -12,7 +12,7 @@
 
 - `execute`--Executor
 - `submit`--ExecutorService
-- `   shutdownNow`--ExecutorService
+- `shutdownNow`--ExecutorService
 
 ###### （1）线程池状态相关
 
