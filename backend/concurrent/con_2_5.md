@@ -608,7 +608,15 @@ private void processWorkerExit(Worker w, boolean completedAbruptly) {
 }
 ```
 
-这里主要关注completedAbruptly带来的影响，当其为true时，代表调用此方法的worker对象从未执行过任务，则可以直接减少worker数量，并将其从workers集合中移除，之后调用tryTerminate方法来终止线程
+这里主要关注completedAbruptly带来的影响，当其为true时，代表当前worker在runWorker的try（执行具体任务）中出现了异常，但凡是正常处理完任务以及工作队列中任务的worker都会将completedAbruptly置为false。那么在completedAbruptly
+
+- 为true时，会将此出现异常的worker删除并将计数值减1，之后判断线程池状态是否小于STOP，也即为SHUTDOWN或RUNNING，如果是则创建并添加一个新的工作线程
+
+- 为false时，如果allowCoreThreadTimeOut为
+
+  - true且工作队列不为空，则至少保留一个工作线程用于处理任务
+  
+  - false则至少保留corePoolSize个工作线程于线程池内
 
 之后会判断线程池状态是否为RUNNING或者SHUTDOWN，如果是则在worker执行过任务时，也即completedAbruptly为false时会判断是否有必要新增一个worker对象，且不传入command
 
