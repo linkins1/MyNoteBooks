@@ -662,15 +662,15 @@ private void processWorkerExit(Worker w, boolean completedAbruptly) {
 
 - 线程数是否大于corePoolSize？
 
-  - 大于
+  - 大于（代表线程池内线程数量已达到corePoolSize）
 
     workerQueue入队成功？
 
-    - 失败
+    - 失败（代表工作队列已满）
 
       线程数是否大于maximumPoolSize？
 
-      - 是
+      - 是（代表线程池已经饱和）
 
         按照指定的策略完成善后
 
@@ -682,7 +682,7 @@ private void processWorkerExit(Worker w, boolean completedAbruptly) {
 
       将任务入队
 
-  - 小于等于
+  - 小于等于（代表线程池内线程数量未达到corePoolSize）
 
     创建线程执行任务
 
