@@ -2,7 +2,7 @@
 
  ### 1.1产生背景
 
-当代典型的[关系数据库](https://zh.wikipedia.org/wiki/關聯式資料庫)在一些数据敏感的应用中表现了糟糕的性能，例如为巨量文档创建索引、高流量网站的[网页服务](https://zh.wikipedia.org/wiki/Web服务)，以及发送[流式媒体](https://zh.wikipedia.org/wiki/流式媒体)[[5\]](https://zh.wikipedia.org/wiki/NoSQL#cite_note-Agrawal2008-5)。关系型数据库的典型实现主要被调整用于执行规模小而读写频繁，或者大批量读而极少写访问的事务[[1\]]([https://zh.wikipedia.org/wiki/NoSQL#%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2](https://zh.wikipedia.org/wiki/NoSQL#发展历史))
+当代典型的[关系数据库](https://zh.wikipedia.org/wiki/關聯式資料庫)在一些数据敏感的应用中表现了糟糕的性能，例如为海量文档创建索引、高流量网站的[网页服务](https://zh.wikipedia.org/wiki/Web服务)，以及发送[流式媒体](https://zh.wikipedia.org/wiki/流式媒体)[[5\]](https://zh.wikipedia.org/wiki/NoSQL#cite_note-Agrawal2008-5)。关系型数据库的典型实现主要被调整用于执行规模小而读写频繁，或者大批量读而极少写访问的事务[[1\]]([https://zh.wikipedia.org/wiki/NoSQL#%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2](https://zh.wikipedia.org/wiki/NoSQL#发展历史))
 
 再加上社交网络类的图数据等复杂的交叉关系存在，仅靠Mysql进行主从复制、分库分表、集群都不能应付实时(Velocity)、海量(Volumn)和多样(Variety)的数据流。为了解决这样的僵局，**打破关系型数据库**中的**关系**和以表为主的**存储格式**的**局限**，引入了Nosql来解决这样的问题。
 
