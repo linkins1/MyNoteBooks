@@ -21,7 +21,7 @@ redis中key都是以字符串的形式存在
 | move key 库编号   | 将本库中的key挪到指定库编号的库中                |
 | expire key 秒钟   | 为给定的key设置过期时间                          |
 | ttl key           | 查看还有多少秒过期，-1表示永不过期，-2表示已过期 |
-| type key          | 查看你的key是什么类型                            |
+| type key          | 查看你的key对应的value是什么类型                            |
 
 ### 3.2value
 
