@@ -113,6 +113,7 @@ docker run -itd --name redis-1 -v /home/redis-conf/redis.conf:/etc/redis/redis.c
 #### 2.3.1默认脚本
 
 默认安装目录在usr/local/bin，其中有如下脚本
+
 :one:	redis-benchmark:性能测试工具
 
 :two:	redis-check-aof：修复有问题的AOF文件，rdb和aof后面讲
