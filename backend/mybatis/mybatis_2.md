@@ -247,7 +247,7 @@ public void findUserByGenderXML(){
 
 调用openSession时，会调用DefaultSqlSessionFactory的方法
 
-```JAVA
+```java
 public SqlSession openSession() {
   return openSessionFromDataSource(configuration.getDefaultExecutorType(), null, false);
 }
@@ -255,7 +255,7 @@ public SqlSession openSession() {
 
 
 
-```JAVA
+```java
 private SqlSession openSessionFromDataSource(ExecutorType execType, TransactionIsolationLevel level, boolean autoCommit) {
   Transaction tx = null;
   try {
