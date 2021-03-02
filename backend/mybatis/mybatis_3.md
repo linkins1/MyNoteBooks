@@ -235,6 +235,8 @@ try {
 
 使用这种方式即是用Mybatis自带的数据库连接池来获取连接对象
 
+>如果配置了dataSource为Druid，那么在openConnection时，使用的是Druid提供的Connection对象（从Druid的连接池中获取），而不会去Mybatis提供的PooledDataSource中去获取，那么Connection对象也就由Druid来管理
+
 #### 3.2.2UNPOOLED
 
 使用这种方式即每次执行方法时都会新建一个连接对象并在使用完销毁。
