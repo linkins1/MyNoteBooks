@@ -2,6 +2,8 @@
 
 ### 3.1数据库连接池
 
+在doQuery之后，会先获取Connection对象，之后获取PrepareStatement对象用于执行sql
+
 #### 3.1.1获得数据库连接对象
 
 <img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/mybatis/image-stacktrace.png" alt="image-stacktrace" style="zoom:80%;" />
