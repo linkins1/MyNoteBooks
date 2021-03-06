@@ -461,11 +461,11 @@ public class DateConverter implements Converter<String, Date> {
 
 - Converter
 
-  适用于客户端->服务端的任何传递，依赖于Jackson对json的预处理
+  适用于客户端->服务端的非JSON的任何传递，依赖于Jackson对json的预处理
 
 - @DateTimeFormat
 
-  与Converter一致，依赖于Jackson对json的预处理
+  适用于客户端->服务端的任何传递
 
 - @JsonFormat
 
