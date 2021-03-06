@@ -272,7 +272,7 @@ public <T> T postProcess(T object) {
 
 ##### 1）添加ObjectPostProcessor的自定义实现类
 
-从上面我们可以看出，可以通过添加postProcess实现类的方式来对代码逻辑进行修改，要注意，由于每一个被new出来的对象至少有一个postProcessor是`AutowireBeanFactoryObjectPostProcessor`，我们自定义的会被按顺序放入`List<ObjectPostProcessor<?>> postProcessors`中，所以，**一定是先注入到IoC容器中，之后再对其中的Bean做修改**，那么自定义的实现类中的postProcess方法中就可以调用上面两个set方法实现自定义
+从上面我们可以看出，可以通过添加postProcess实现类的方式来对代码逻辑进行修改，要注意，由于每一个Bean Filter都由对应的XXXConfigurer完成配置，每一个XXXConfigurer都由AuthenticationManagerBuilder完成创建，因而每个Bean Filter都至少有一个postProcessor是`AutowireBeanFactoryObjectPostProcessor`，我们自定义的会被按顺序放入`List<ObjectPostProcessor<?>> postProcessors`中，所以，**一定是先注入到IoC容器中，之后再对其中的Bean做修改**，那么自定义的实现类中的postProcess方法中就可以调用上面两个set方法实现自定义
 
 ##### 2）调用addObjectPostProcessor方法
 
