@@ -36,7 +36,7 @@
 
 ![image-20201021111149344](https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/vhr/image-20201021111149344.png)
 
-每一部分都会有固定的头来表示文件名称（Disposition）和类型（Type），这种方式通过**增大MIME类型的payload的大小**，来实现减少头部信息，适用于大文件传输
+每一部分都会有固定的头来表示文件名称（name）和类型（Disposition），这种方式通过**增大MIME类型的payload的大小**，来实现减少头部信息，适用于大文件传输
 
 >**application/x-www-form-urlencoded与multipart/form-data对比**
 >
