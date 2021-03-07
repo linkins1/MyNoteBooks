@@ -505,7 +505,7 @@ public class MailSendTask {
 
 ###### （2）任务
 
-- 查询数据库中日期大于系统时间（当前）且status为0（代表还在尝试）的条目
+- 查询数据库中存储的尝试日期小于系统时间（当前）且status为0（代表还在尝试）的条目
 - 判断每个条目的count值
   - 如果count>=3，更新status为2，代表失败
   - 否则，取出其中的empId，从employee表中查询emp条目，再次调用rabbitTemplate重新发送，并将mysql中的对应条目的count++，并更新时间
