@@ -132,7 +132,7 @@ loginFilter.setAuthenticationFailureHandler((request, response, exception) -> {
 
 > Specialization of `@Component` for classes that declare `@ExceptionHandler`,` @InitBinder`, or `@ModelAttribute` methods to be **shared across multiple @Controller classes**.
 
-从上面注释可以看出，这个注解用于配合上面其他三个注解存在，加入某个类标记了` @ControllerAdvice`，那么所有的Controller就都可以共享这个bean。
+从上面注释可以看出，这个注解用于配合上面其他三个注解存在，假如某个类标记了` @ControllerAdvice`，那么所有的Controller就都可以共享这个bean。
 
 下面先看`@ExceptionHandler`的定义，如下
 
@@ -165,7 +165,7 @@ public class GlobalExceptionHandler {
 
 首先这个类相关的bean会被放入容器中以便于所有的Controller共享
 
-当有Controller抛出`SQLException.class`及其子类的异常时，这个全局异常处理对象就会将异常对象e拦截下俩，之后放入`@ExceptionHandler`修饰的方法的参数中，之后根据具体的异常类型将异常信息封装为`RespBean`对象后以JSON形式返回至前端（这也是为什么需要RestController的原因）
+当有Controller抛出`SQLException.class`及其子类的异常时，这个全局异常处理对象就会将异常对象e拦截下来，之后放入`@ExceptionHandler`修饰的方法的参数中，之后根据具体的异常类型将异常信息封装为`RespBean`对象后以JSON形式返回至前端（这也是为什么需要RestController的原因）
 
 ##### 2）例子
 
