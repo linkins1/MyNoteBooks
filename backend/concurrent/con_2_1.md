@@ -352,8 +352,6 @@ public class InheritableThreadLocalExp {
             public void run() {
                 synchronized (object){
                     System.out.println("------------------B---------------------");
-                    //由于不论是inheritableThreadLocal还是ThreadLocal都是以对象引用作为key，所以B中设定的值
-//                    会覆盖父线程中设定的value
                     stringThreadLocal.set("Thread-B");
                     ArrayList<Integer> integers = new ArrayList<>();
                     integers.add(2);
@@ -448,7 +446,7 @@ private ThreadLocalMap(ThreadLocalMap parentMap) {
   - 利用父线程的key和刚转型过的value创建Entry对象
   - 计算哈希值及索引，将其放入子线程的table中
 
-  这里注意到，由于获取到的是父线程中的k-v来新建entry对象，其实也就是父entry的一个拷贝，**但是**，其中存储的k仍然是同一个引用，因而计算得到的哈希值和索引在子table中和父table是一致的，**这也是为什么子线程中如果使用同一个ThreadLocal变量设定值会覆盖父线程中设定的值的原因**
+  这里注意到，由于获取到的是父线程中的k-v来新建entry对象，其实也就是父entry的一个拷贝，**尽管**其中存储的k仍然是同一个引用，且计算得到的哈希值和索引在子table中和父table是一致的，但是父子线程操作的是两个table，因而在子线程中使用同一个对象set时，不会覆盖父线程中的结果，子线程中的table是父线程的深拷贝
 
 ###### （3）与ThreadLocal比较
 
