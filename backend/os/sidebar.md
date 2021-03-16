@@ -5,7 +5,7 @@
   - [OS4-调度](/backend/os/os_4.md)
   - [OS5-进程同步/互斥](/backend/os/os_5.md)
   - [OS6-内存基础](/backend/os/os_6.md)
-  - [OS7-内存管理]
+  - OS7-内存管理
     - [OS7.0-内存管理概述](/backend/os/os_7_0.md)
     - [OS7.1-内存分配与回收](/backend/os/os_7_1.md)
     - [OS7.2-内存空间扩充](/backend/os/os_7_2.md)
