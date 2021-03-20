@@ -621,3 +621,7 @@ Hotspot遍历所有对象时，就会开始对所有对象进行动态年龄判�
 :two:如果小于或者-XX：HandlePromotionFailure设置为不允许，则触发一次Full GC
 
 > 通常都会将-XX：HandlePromotionFailure设置为允许，这样可以避免Full GC过于频繁。JDK6之后默认打开
+
+#### 参考
+
+[JVM性能调优（2） —— 垃圾回收器和回收策略 - bojiangzhou - 博客园 (cnblogs.com)](https://www.cnblogs.com/chiangchou/p/jvm-2.html)
