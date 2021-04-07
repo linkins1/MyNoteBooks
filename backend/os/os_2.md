@@ -326,7 +326,7 @@ Linux中的所有进程都是由0号进程 -idle `fork`出来的，idle进程运
 
 2号进程(kthreadd)由kernel_thread创建的，其运行于内核态，负责所有内核级线程的管理和调度
 
-<img src="C:%5CUsers%5C123%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210329132147274.png" alt="image-20210329132147274" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/temp/image-20210329132147274.png" alt="image-20201024212027063" style="zoom: 50%;" />
 
 #### 2.4.2 fork
 
@@ -335,7 +335,10 @@ Linux中的所有进程都是由0号进程 -idle `fork`出来的，idle进程运
 fork函数用于创建子进程，采用写时复制的方式创建，效果等同于快照，有如下特点
 
 - 是一个单独的进程
-- 子进程的堆、栈、PCB（包括打开文件描述符等）都是父进程的当前副本
+- 子进程的堆、栈、PCB（包括打开文件描述符等）都是父进程的当前副本，也即不和父进程共享，但是文件偏移量是会被共享的
+
+> 从上可知，不被共享的有全局变量、局部变量
+
 - 子进程创建后一般会被先执行
 
 由于子进程被创建后也会调用到fork函数，
