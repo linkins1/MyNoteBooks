@@ -571,11 +571,7 @@ public static void testTenuringThreshold() {
 
 ##### 1）经验准则
 
-为了能更好地适应不同程序的内存状况，HotSpot虚拟机并不是永远要求对象的年龄必须达到-XX：MaxTenuringThreshold才能晋升老年代，~~如果在**Survivor空间中相同年龄所有对象大小的总和大于Survivor空间的一半**，**年龄大于或等于该年龄的对象就可以直接进入老年代**，~~无须等到-XX：MaxTenuringThreshold中要求的年龄。
-
-***这里不一定非要相同年龄的对象之和大于Survivor的一半才会进行垃圾回收，而是下面逻辑***
-
-将对象按年龄自然排序，从头开始累加，当加到某个对象a时当前和大于了Survivor的一半，假设对象a的年龄为x，那么就会将年龄>=x的对象全部拉入老年代
+为了能更好地适应不同程序的内存状况，HotSpot虚拟机并不是永远要求对象的年龄必须达到-XX：MaxTenuringThreshold才能晋升老年代，其会将对象按年龄自然排序，从头开始累加，当加到某个对象a时当前和大于了Survivor的一半，假设对象a的年龄为x，那么就会将年龄>=x的对象全部拉入老年代，无须等到-XX：MaxTenuringThreshold中要求的年龄。
 
 ##### 2）测试代码
 
