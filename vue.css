@@ -72,7 +72,7 @@ kbd {
   border: solid 1px #ccc;
   border-radius: 3px;
   display: inline-block;
-  font-size: 15px !important;
+  font-size: 12px !important;
   line-height: 12px;
   margin-bottom: 3px;
   padding: 3px 5px;
@@ -368,13 +368,13 @@ body.sticky .sidebar-toggle {
   font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
-  left: 20px;
+  left: -12px;
   line-height: 20px;
   position: absolute;
   height: 20px;
   width: 20px;
   text-align: center;
-  top: 20px;
+  top: 14px;
 }
 .markdown-section p.tip code {
   background-color: #efefef;
@@ -764,10 +764,8 @@ body {
   padding: 5px 10px 0;
   position: absolute;
   right: 0;
-  text-align: center;
+  text-align: right;
   top: 0;
-  left: 0;
-  bottom: 0;
 }
 .markdown-section pre::after,
 .markdown-section output::after {
