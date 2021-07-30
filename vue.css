@@ -305,10 +305,10 @@ body.sticky .sidebar-toggle {
   transition: left 250ms ease;
 }
 .markdown-section {
-  margin: 50px;
+  margin: 0 auto;
   max-width: 80%;
   padding: 30px 15px 40px 15px;
-  position: absolute;
+  position: relative;
 }
 .markdown-section > * {
   box-sizing: border-box;
