@@ -58,7 +58,7 @@ body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   font-size: 15px;
   letter-spacing: 0;
-  margin: 10px;
+  margin: 20px;
   overflow-x: hidden;
 }
 img {
@@ -305,10 +305,10 @@ body.sticky .sidebar-toggle {
   transition: left 250ms ease;
 }
 .markdown-section {
-  margin: 0 20px 0 20px;
+  margin: auto;
   max-width: 80%;
   padding: 30px 15px 40px 15px;
-  position: relative;
+  position: absolute;
 }
 .markdown-section > * {
   box-sizing: border-box;
