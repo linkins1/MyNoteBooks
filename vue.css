@@ -368,13 +368,13 @@ body.sticky .sidebar-toggle {
   font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
-  left: -12px;
+  left: 20px;
   line-height: 20px;
   position: absolute;
   height: 20px;
   width: 20px;
   text-align: center;
-  top: 14px;
+  top: 20px;
 }
 .markdown-section p.tip code {
   background-color: #efefef;
