@@ -16,7 +16,7 @@ body:not(.ready) > nav {
     display: none;
 }
 div#app {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: lighter;
     margin: 40vh auto;
     text-align: center;
@@ -56,7 +56,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #34495e;
     font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 21px;
+    font-size: 15px;
     letter-spacing: 0;
     margin: 0;
     overflow-x: hidden;
@@ -72,7 +72,7 @@ kbd {
     border: solid 1px #ccc;
     border-radius: 3px;
     display: inline-block;
-    font-size: 21px !important;
+    font-size: 15px !important;
     line-height: 12px;
     margin-bottom: 3px;
     padding: 3px 5px;
@@ -108,7 +108,7 @@ li input[type='checkbox'] {
 }
 .app-nav a {
     color: inherit;
-    font-size: 22px;
+    font-size: 16px;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -144,7 +144,7 @@ li input[type='checkbox'] {
 }
 .app-nav li ul li {
     display: block;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1rem;
     margin: 0;
     margin: 8px 14px;
@@ -215,7 +215,7 @@ main.hidden {
 }
 .sidebar > h1 {
     margin: 0 auto 1rem;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 300;
     text-align: center;
 }
@@ -366,7 +366,7 @@ body.sticky .sidebar-toggle {
     color: #fff;
     content: '!';
     font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     left: 20px;
     line-height: 20px;
@@ -529,7 +529,7 @@ section.cover p {
 }
 section.cover h1 {
     color: inherit;
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     font-weight: 300;
     margin: 0.625rem 0 2.5rem;
     position: relative;
@@ -540,11 +540,11 @@ section.cover h1 a {
 }
 section.cover h1 small {
     bottom: -0.4375rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     position: absolute;
 }
 section.cover blockquote {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 section.cover ul {
@@ -562,7 +562,7 @@ section.cover .cover-main > p:last-child a {
     box-sizing: border-box;
     color: var(--theme-color, #42b983);
     display: inline-block;
-    font-size: 1.45rem;
+    font-size: 1.05rem;
     letter-spacing: 0.1rem;
     margin: 0.5rem 1rem;
     padding: 0.75em 2rem;
@@ -600,7 +600,7 @@ body {
 }
 .sidebar ul li a {
     color: #505d6b;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: normal;
     overflow: hidden;
     text-decoration: none;
@@ -637,26 +637,26 @@ body {
     font-weight: 600;
 }
 .markdown-section h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin: 0 0 1rem;
 }
 .markdown-section h2 {
-    font-size: 2.15rem;
+    font-size: 1.75rem;
     margin: 45px 0 0.8rem;
 }
 .markdown-section h3 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin: 40px 0 0.6rem;
 }
 .markdown-section h4 {
-    font-size: 1.65rem;
+    font-size: 1.25rem;
 }
 .markdown-section h5 {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .markdown-section h6 {
     color: #777;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .markdown-section figure,
 .markdown-section p {
@@ -720,7 +720,7 @@ body {
     white-space: pre-wrap;
 }
 .markdown-section > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) code {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .markdown-section pre {
     padding: 0 1.4rem;
@@ -730,7 +730,7 @@ body {
 }
 .markdown-section pre > code {
     color: #525252;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 2.2em 5px;
     line-height: inherit;
     margin: 0 2px;
@@ -757,7 +757,7 @@ body {
 .markdown-section pre::after,
 .markdown-section output::after {
     color: #ccc;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: 600;
     height: 15px;
     line-height: 15px;
@@ -857,3 +857,4 @@ code .token {
     position: relative;
     left: auto;
 }
+
