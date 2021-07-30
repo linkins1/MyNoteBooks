@@ -610,13 +610,16 @@ Hotspot遍历所有对象时，就会开始对所有对象进行动态年龄判�
 
 ###### 分配担保机制
 
-发生Minor GC之前，会先计算一次老年代的最大可用连续空间的大小，与新生代中所有对象的大小总和比较，如果大于，则可以安全的进行垃圾回收，否则
+在新生代没有内存可以分配时，会先计算一次老年代的最大可用连续空间的大小，与新生代中所有对象的大小总和比较，如果
 
-:one:虚拟机会先查看-XX：HandlePromotionFailure参数的设置值是否允许担保失败（Handle Promotion Failure）；如果允许，那会继续检查**老年代最大可用的连续空间是否大于历次晋升到老年代对象的平均大小**，如果大于，将尝试进行一次Minor GC，**尽管这次Minor GC是有风险的**（风险在于平均大小只是**经验值**）
+- 大于，则可以安全的进行垃圾回收，回收后如果剩余存活的对象大小和小于Survivor区，则放入Survivor，否则拉入老年代
+- 小于，则执行下面步骤
 
-:two:如果小于或者-XX：HandlePromotionFailure设置为不允许，则触发一次Full GC
+    :one:虚拟机会先查看-XX：HandlePromotionFailure参数的设置值是否允许担保失败（Handle Promotion Failure）；如果允许，那会继续检查**老年代最大可用的连续空间是否大于历次晋升到老年代对象的平均大小**，如果大于，将尝试进行一次Minor GC，**尽管这次Minor GC是有风险的**（风险在于平均大小只是**经验值**），Minor GC后，如果剩余存活的对象大小和小于Survivor区，则放入Survivor，否则拉入老年代
 
-> 通常都会将-XX：HandlePromotionFailure设置为允许，这样可以避免Full GC过于频繁。JDK6之后默认打开
+    :two:如果小于或者-XX：HandlePromotionFailure设置为不允许，则触发一次Full GC
+
+    > 通常都会将-XX：HandlePromotionFailure设置为允许，这样可以避免Full GC过于频繁。JDK6之后默认打开
 
 #### 参考
 
