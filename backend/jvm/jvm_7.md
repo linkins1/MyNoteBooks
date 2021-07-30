@@ -73,7 +73,7 @@ C语言需要在**编译时**需要进行连接，而在Java语言里面，类�
 
 :three: 在堆中生成一个代表这个类的**java.lang.Class对象**，引用存放在栈，作为**访问方法区**中这个类的各种数据**的入口**
 
-> 实际上在方法区中会生成一个instanceKlass对象，其中包含了类的元信息如方法表、class文件常量池等，在堆中创建的对象是instanceOopDesc，其中包含了instanceKlass对象的引用
+> 实际上在方法区中会生成一个instanceKlass对象，其中包含了类的元信息如方法表、class文件常量池加载后得到的运行时常量池等，在堆中创建的对象是instanceOopDesc，其中包含了instanceKlass对象的引用
 
 对于上面提到的第一步，可以采用多种方式来获取class文件的字节流
 
