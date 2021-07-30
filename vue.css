@@ -307,7 +307,7 @@ body.sticky .sidebar-toggle {
 .markdown-section {
   margin: 0 auto;
   max-width: 80%;
-  padding: 30px 80px 40px 10px;
+  padding: 30px 100px 40px 10px;
   position: relative;
 }
 .markdown-section > * {
@@ -720,7 +720,7 @@ body {
   white-space: pre-wrap;
 }
 .markdown-section > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) code {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .markdown-section pre {
   padding: 0 1.4rem;
@@ -730,7 +730,7 @@ body {
 }
 .markdown-section pre > code {
   color: #525252;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 2.2em 5px;
   line-height: inherit;
   margin: 0 2px;
@@ -757,7 +757,7 @@ body {
 .markdown-section pre::after,
 .markdown-section output::after {
   color: #ccc;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 600;
   height: 15px;
   line-height: 15px;
