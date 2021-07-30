@@ -445,9 +445,15 @@ protected synchronized Class<?> loadClass(String name, boolean resolve) throws C
 }
 ```
 
-上面代码中可以看出，如果c为null，则查看父类加载器是不是 null，如果是，则使用引导类加载器，如果不是则查找对应的父类加载器，如果不是null，则使用父类加载器加载；如果是null或者父类加载器抛出ClassNotFoundException时，则使用用户重写的findClass进行加载，如果还无法加载，则宣告失败。
+上面代码中可以看出，如果c为null，
+  
+- 则查看父类加载器是不是 null，如果
+  - 是，则使用引导类加载器
+  - 不是，则查找对应的父类加载器；
+  
+  如果父类加载器抛出ClassNotFoundException时，则使用用户重写的findClass进行加载，如果还无法加载，则宣告失败。
 
-如果c不是null，则证明已经被加载过，直接进行解析即可
+- 如果c不是null，则证明已经被加载过，直接进行解析即可
 
 ### 7.5Java模块化系统
 
