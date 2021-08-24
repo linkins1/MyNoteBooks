@@ -183,7 +183,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: unable to create native t
 
 ##### 1）定义
 
-Java堆是虚拟机所管理的**内存中最大的**一块，在虚拟机启动时创建。其囊括了**几乎**(起因于逃逸分析技术)所有的**对象实例**以及**数组**。堆由垃圾收集器(Garbage Collector)管理，因而也称作GC堆。
+Java堆是虚拟机所管理的**内存中最大的**一块，在虚拟机启动时创建。其囊括了**几乎**(除了逃逸对象)所有的**对象实例**以及**数组**。堆由垃圾收集器(Garbage Collector)管理，因而也称作GC堆。
 
 ##### 2）线程共有&&独有
 
