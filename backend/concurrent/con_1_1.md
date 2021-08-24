@@ -338,7 +338,7 @@ public enum State {
 
 **综上所述**，状态转移图如下所示
 
-![thread-state-conversion](https://raw.githubusercontent.com/linkins1/MyNoteBooks/master/resources/imgs/temp/thread-state-conversion.png)
+![thread-state-conversion](https://raw.githubusercontent.com/linkins1/MyNoteBooks/master/resources/imgs/concurrent/thread-state-conversion.png)
 
 #### 1.1.6线程死锁
 
