@@ -338,7 +338,7 @@ public enum State {
 
 **综上所述**，状态转移图如下所示
 
-<img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/concurrent/image-20201117162542068.png" alt="image-20201117162542068" style="zoom:80%;" />
+![thread-state-conversion](https://raw.githubusercontent.com/linkins1/MyNoteBooks/master/resources/imgs/temp/thread-state-conversion.png)
 
 #### 1.1.6线程死锁
 
