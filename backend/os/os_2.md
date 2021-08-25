@@ -324,7 +324,7 @@ Linux中的所有进程都是由0号进程 -idle `fork`出来的，idle进程运
 
 1号进程(init)是由kernel_thread创建的，其在内核空间完成初始化，之后运行于用户态，是其他用户进程的父进程，完成创建之后会以守护进程的方式监控用户进程
 
-2号进程(kthreadd)由kernel_thread创建的，其运行于内核态，负责所有内核级线程的管理和调度
+2号进程(kthreadd)由kernel_thread创建的，其运行于内核态，是所有内核进程的父进程，负责所有内核级线程的管理和调度
 
 <img src="https://cdn.jsdelivr.net/gh/linkins1/MyNoteBooks/resources/imgs/temp/image-20210329132147274.png" alt="image-20201024212027063" style="zoom: 50%;" />
 
