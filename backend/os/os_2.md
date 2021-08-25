@@ -84,7 +84,7 @@
 
 按照进程的状态将**PCB**分为多个**队列**，操作系统持有各个**队列的指针**，如下图所示（摘自王道考研）
 
-<img src="C:%5CUsers%5C123%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201022203510982.png" alt="image-20201022203510982" style="zoom: 67%;" />
+![image-20210825175358263](https://raw.githubusercontent.com/linkins1/MyNoteBooks/master/resources/imgs/os/image-20210825175358263.png)
 
 ##### 2）索引方式
 
