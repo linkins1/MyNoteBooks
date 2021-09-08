@@ -74,7 +74,6 @@
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
   const gitalk = new Gitalk({
-    id: 'MyNBks Comments',
     clientID: '4a90b1da3107392c8ad7',
     clientSecret: '33766932d59276590c9ce12eb4617fd3bd1391d3',
     repo: 'MyNoteBooks',
@@ -82,7 +81,8 @@
     admin: ['linkins1'],
     title: 'Linkins1NBk',
     // facebook-like distraction free mode
-    distractionFreeMode: false
+    distractionFreeMode: false,
+    id: decodeURI(window.location.pathname)
   })
   </script>
 </body>
