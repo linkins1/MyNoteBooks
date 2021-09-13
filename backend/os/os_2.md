@@ -452,3 +452,71 @@ int main()
 >
 > 写时复制图片参考[Linux 写时复制机制原理 - SegmentFault 思否](https://segmentfault.com/a/1190000039869422)
 
+#### 2.4.3 孤儿进程&僵尸进程
+
+子进程在执行结束后，其PCB仍会常驻内存，这时需要由父进程来调用`wait`来负责子进程PCB的回收
+
+##### 1）孤儿进程
+
+父进程在fork出子进程后，如果未等到子进程完成就提前结束，那么这些被fork出的子进程就成为孤儿进程，其会被`1号进程`接管，由此进程循环调用`wait`来完成子进程的状态记录和资源回收
+
+##### 2）僵尸进程
+
+###### （1）定义
+
+当子进程退出后，父进程如果没有调用`wait`来回收，那么在父进程存活期间，这些子进程的PCB仍然内存中，对应的这些子进程即为僵尸进程
+
+###### （2）解决方案
+
+- 父进程调用wait函数来回收子进程的PCB
+
+  > 代码来自[孤儿进程与僵尸进程 - Rabbit_Dale - 博客园 (cnblogs.com)](https://www.cnblogs.com/anker/p/3271773.html)
+
+  ```c
+  #include <stdio.h>
+  #include <unistd.h>
+  #include <errno.h>
+  #include <stdlib.h>
+  #include <signal.h>
+  
+  static void sig_child(int signo);
+  
+  int main()
+  {
+      pid_t pid;
+      //创建捕捉子进程退出信号
+      signal(SIGCHLD,sig_child);
+      pid = fork();
+      if (pid < 0)
+      {
+          perror("fork error:");
+          exit(1);
+      }
+      else if (pid == 0)
+      {
+          printf("I am child process,pid id %d.I am exiting.\n",getpid());
+          exit(0);
+      }
+      printf("I am father process.I will sleep two seconds\n");
+      //等待子进程先退出
+      sleep(2);
+      //输出进程信息
+      system("ps -o pid,ppid,state,tty,command");
+      printf("father process is exiting.\n");
+      return 0;
+  }
+  
+  static void sig_child(int signo)
+  {
+       pid_t        pid;
+       int        stat;
+       //处理僵尸进程
+       while ((pid = waitpid(-1, &stat, WNOHANG)) >0)
+              printf("child %d terminated.\n", pid);
+  }
+  ```
+
+- 杀死父进程
+
+  通过kill -9 pid杀死父进程后，僵尸进程变成孤儿进程，由1号进程来负责处理
+
