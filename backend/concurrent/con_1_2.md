@@ -121,11 +121,11 @@ synchronized关键字用于对Java中的任意内置锁（如Java对象或Java�
 
 - 上锁
 
-  把synchronized块内使用到的共享变量从线程的**工作内存中清除**
+  把synchronized块内使用到的共享变量从线程的**cache中清除**
 
 - 解锁
 
-  把synchronized块内使用到的共享变量的值**更新到工作内存**
+  把synchronized块内使用到的共享变量的值**更新到主存**
 
 ##### 4）与管程的关系
 
