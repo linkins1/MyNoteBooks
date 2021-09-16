@@ -7,3 +7,4 @@
   - [JVM6-类加载机制](/backend/jvm/jvm_7.md)
   - [JVM7-虚拟机字节码执行引擎](/backend/jvm/jvm_8.md)
   - [JVM8-前端编译与后端编译](/backend/jvm/jvm_9.md)
+  - [JVM问题汇总](/backend/jvm/jvm_10.md)
