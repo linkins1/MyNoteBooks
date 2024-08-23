@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" version="24.7.7" pages="46">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" version="24.7.7" pages="47">
   <diagram id="c8kAMgYa_nflIfkOADPL" name="Page-1">
     <mxGraphModel dx="990" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7427,12 +7427,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="IV8bWO9xY3vICSSk4ObE" name="第 46 页">
-    <mxGraphModel dx="1165" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1398" dy="930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="fP_R1WBh_2U4lR4UEXUW-7" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="221" y="160" width="385" height="385" as="geometry" />
+          <mxGeometry x="190" y="730" width="385" height="385" as="geometry" />
         </mxCell>
         <mxCell id="fP_R1WBh_2U4lR4UEXUW-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeWidth=3;strokeColor=none;" vertex="1" parent="fP_R1WBh_2U4lR4UEXUW-7">
           <mxGeometry width="385" height="385" as="geometry" />
@@ -7445,6 +7445,29 @@
         </mxCell>
         <mxCell id="fP_R1WBh_2U4lR4UEXUW-6" value="&lt;font color=&quot;#b85450&quot; face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 47px;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;i&gt;4&lt;sup style=&quot;&quot;&gt;th&lt;/sup&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="fP_R1WBh_2U4lR4UEXUW-7">
           <mxGeometry width="42.5" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BSLsaPPAom7PtJWNZsF9" name="第 47 页">
+    <mxGraphModel dx="869" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pHbNE8qmPe1RBrMntJn3-6" value="" style="group;fillColor=#d5e8d4;strokeColor=#d5e8d4;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="200" y="240" width="385" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="pHbNE8qmPe1RBrMntJn3-7" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeWidth=3;strokeColor=none;" vertex="1" parent="pHbNE8qmPe1RBrMntJn3-6">
+          <mxGeometry width="385" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="pHbNE8qmPe1RBrMntJn3-8" value="&lt;font color=&quot;#42a170&quot; face=&quot;Courier New&quot; style=&quot;font-size: 47px&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u style=&quot;font-style: italic;&quot;&gt;Sharing&amp;nbsp;&lt;/u&gt;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pHbNE8qmPe1RBrMntJn3-6">
+          <mxGeometry x="12.5" y="120" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pHbNE8qmPe1RBrMntJn3-9" value="&lt;b style=&quot;font-family: &amp;quot;courier new&amp;quot;;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;font color=&quot;#047b40&quot; style=&quot;font-size: 46px;&quot;&gt;&lt;u style=&quot;&quot;&gt;Zone&amp;nbsp;&lt;/u&gt;&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pHbNE8qmPe1RBrMntJn3-6">
+          <mxGeometry x="285.5" y="220" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pHbNE8qmPe1RBrMntJn3-10" value="&lt;font face=&quot;Courier New&quot; color=&quot;#1e915a&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;i&gt;3&lt;sup&gt;rd&lt;/sup&gt;&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="pHbNE8qmPe1RBrMntJn3-6">
+          <mxGeometry y="7" width="42.5" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
